@@ -1,4 +1,7 @@
 function hasDuplicates(numbers) {
+    if (numbers.length < 2) {
+        return false;
+    }
     for (i = 1; i < numbers.length; i++) {
         numbers[i] += numbers[i - 1];
     }
