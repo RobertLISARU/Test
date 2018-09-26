@@ -1,0 +1,16 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "description": "Robert's solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-with-coverage": "nyc --reporter=html --reporter=text mocha"
+  },
+  "author": "Robert",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  }
+}
