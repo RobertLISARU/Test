@@ -1,5 +1,11 @@
 function hasDuplicates(numbers) {
-    return numbers.reduce((x, y) => x + y) !== numbers.length * (numbers.length + 1) / 2;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[Math.abs(numbers[i])] < 0) {
+            return true;
+        }
+        numbers[Math.abs(numbers[i])] *= -1;
+    }
+    return false;
 }
 
 module.exports = hasDuplicates;
