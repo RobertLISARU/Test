@@ -12,7 +12,7 @@ it("test when duplicates", () => {
 });
 
 it("test duplicates in single number array", () => {
-    const numbers = [42];
+    const numbers = [1];
     assert(hasDuplicates(numbers) == false);
 });
 
