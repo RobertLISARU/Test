@@ -8,4 +8,9 @@ it("largest 2", () => {
     assert.equal(largest[1], 100);
 });
 
-//I'll skip the input validation tests for now
+it("largest 2 extra scenario", () => {
+   const numbers = [1, 2, 5, 4, 3];
+   let largest = largest2(numbers);
+   assert.equal(largest[0], 5);
+   assert.equal(largest[1], 4);
+});

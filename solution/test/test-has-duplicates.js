@@ -3,17 +3,20 @@ const assert = require('assert');
 
 it("test when no duplicates", () => {
     const numbers = [3, 2, 1, 4, 7, 6, 5];
-    assert(hasDuplicates(numbers) == false);
+    assert(!hasDuplicates(numbers));
 });
 
 it("test when duplicates", () => {
     const numbers = [6, 2, 5, 4, 3, 6, 1];
-    assert(hasDuplicates(numbers) == true);
+    assert(hasDuplicates(numbers));
 });
 
 it("test duplicates in single number array", () => {
     const numbers = [1];
-    assert(hasDuplicates(numbers) == false);
+    assert(!hasDuplicates(numbers));
 });
 
-//I'll skip the input validation tests for now
+it("test duplicates - extra scenario", () => {
+    const numbers = [1, 1, 4, 4];
+    assert(hasDuplicates(numbers));
+});
