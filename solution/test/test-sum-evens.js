@@ -15,12 +15,3 @@ it("sum evens when negative numbers", () => {
     const numbers = [-10, -12, -11, -10, -9];
     assert.equal(sumEvens(numbers), -32);
 });
-
-it("sum evens when non array", () => {
-    assert.equal(sumEvens("not an array"), undefined);
-});
-
-it("sum evens when non integer values", () => {
-    const nonIntegers = [10, "definitely not an integer", 2, 3, 3.3];
-    assert.equal(sumEvens(nonIntegers), undefined);
-});
