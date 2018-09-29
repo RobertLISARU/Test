@@ -1,9 +1,10 @@
 function hasDuplicates(numbers) {
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[Math.abs(numbers[i])] < 0) {
+    for  (let i = 0; i < numbers.length; i++) {
+        let currentValue = Math.abs(numbers[i]);
+        if (numbers[currentValue] < 0) {
             return true;
         }
-        numbers[Math.abs(numbers[i])] *= -1;
+        numbers[currentValue] *= -1;
     }
     return false;
 }
