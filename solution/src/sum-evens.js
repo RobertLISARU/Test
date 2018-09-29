@@ -1,5 +1,6 @@
 function sumEvens(numbers) {
-    return numbers.filter((x) => x % 2 == 0).reduce((x, y) => x + y, 0);
+    return numbers.filter((number) => number % 2 == 0)
+        .reduce((previousValue, currentValue) => previousValue + currentValue, 0);
 }
 
 module.exports = sumEvens;
