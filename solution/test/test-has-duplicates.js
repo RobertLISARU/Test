@@ -20,3 +20,8 @@ it("test duplicates - extra scenario", () => {
     const numbers = [1, 1, 4, 4];
     assert(hasDuplicates(numbers));
 });
+
+it("test duplicates - when n is the duplicate element", () => {
+    const numbers = [1, 2, 4, 4];
+    assert(hasDuplicates(numbers));
+});
